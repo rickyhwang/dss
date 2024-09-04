@@ -1,0 +1,128 @@
+// icon
+[class*='icon-'] {
+    --v-icon-size: 2.4rem;
+    --v-icon-size-medium: 2.8rem;
+    --v-icon-size-large: 3.2rem;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-size: cover;
+}
+
+// icon 20px
+.icon-trash {
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../images/icon/icon_trash.png');
+}
+.icon-pencil {
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../images/icon/icon_pencil.png');
+}
+
+.icon-download {
+    width: var(--v-icon-size);
+    height: var(--v-icon-size);
+    background-image: url('../images/icon/icon_download.png');
+}
+
+.icon-clip {
+    width: var(--v-icon-size);
+    height: var(--v-icon-size);
+    background-image: url('../images/icon/icon_clip.png');
+}
+
+.icon-minus {
+    width: var(--v-icon-size);
+    height: var(--v-icon-size);
+    background-image: url('../images/icon/icon_minus.png');
+}
+
+.icon-plus {
+    width: var(--v-icon-size);
+    height: var(--v-icon-size);
+    background-image: url('../images/icon/icon_plus.png');
+}
+
+.icon-lock {
+    width: var(--v-icon-size);
+    height: var(--v-icon-size);
+    background-image: url('../images/icon/icon_lock.png');
+}
+
+.icon-q {
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url('../images/icon/icon_qna_q.png');
+}
+
+.icon-a {
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url('../images/icon/icon_qna_a.png');
+}
+
+.icon-pdf {
+    width: var(--v-icon-size-medium);
+    height: var(--v-icon-size-medium);
+    background-image: url('../images/icon/icon_pdf.png');
+}
+
+.icon-ppt {
+    width: var(--v-icon-size-medium);
+    height: var(--v-icon-size-medium);
+    background-image: url('../images/icon/icon_ppt.png');
+}
+
+[class*='icon-pick-'] {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.icon-pick-on {
+    background-image: url('../images/icon/icon-wishlist.png');
+}
+.icon-pick-off {
+    background-image: url('../images/icon/icon_wishlist_off.png');
+}
+
+.icon-prod {
+    width: 3.2rem;
+    height: 3.2rem;
+    background-image: url('../images/icon/icon_prod.png');
+}
+
+.icon-flow-arrow {
+    width: var(--v-icon-size-large);
+    height: var(--v-icon-size-large);
+    background-image: url('../images/icon/icon_flow_arrow.png');
+}
+
+@media only screen and (max-width: 960px) {
+    .icon-q, .icon-a,
+    .icon-flow-arrow,
+    .icon-prod {
+        width: var(--v-icon-size);
+        height: var(--v-icon-size);
+    }
+    .icon-pdf {
+        width: var(--v-icon-size);
+        height: var(--v-icon-size);
+    }
+    .icon-ppt {
+        width: var(--v-icon-size);
+        height: var(--v-icon-size);
+    }
+    .icon-minus, .icon-plus {
+        width: 2rem;
+        height: 2rem;
+    }
+    .icon-trash {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+    .icon-pencil {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}
