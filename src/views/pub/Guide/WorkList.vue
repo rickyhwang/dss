@@ -2471,6 +2471,16 @@
 			</div>
 		</section>
 		<!-- //공통/기타 -->
+
+		<!-- 타겟마케팅 -->
+		<section class="ia-section ia-section-ajax" data-file="ajax_ia_5" data-color="01a2de" id="gIA6">
+			<div class="ia-section-header">
+				<h2 class="ia-h2"><a href="#this" class="accordion-toggle">타겟마케팅</a></h2>
+				
+			</div>
+			
+		</section>
+		<!-- //타겟마케팅 -->
 	</div>
 </template>
 
