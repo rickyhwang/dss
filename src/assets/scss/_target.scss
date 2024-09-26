@@ -163,9 +163,9 @@
   }  
 
   .inp-select-area{
-      .select{display:flex;align-items:center;gap:1rem; flex-direction: column;
-          > *{width:100%;}
-      }
+    .select{display:flex;align-items:center;gap:1rem;
+      .inp-select{min-width:22rem;}
+    }
       .selected{
         &:empty{display:none;}
           margin-top:2rem;
@@ -177,6 +177,13 @@
       .v-btn{height:4.8rem;}
 
   }  
+  @media only screen and (max-width: 960px) {
+    .inp-select-area{
+      .select{display:flex;align-items:center;gap:1rem; flex-direction: column;
+          > *{width:100%;}
+      }
+    }
+  }
 
   .inp-file-add{ 
     margin:1.5rem 0 1rem;
@@ -276,10 +283,28 @@
   margin-top:8rem;
   .result-box{ padding:5rem 3rem; color:#000; font-size:2.5rem; background:#F4F7FC; border-radius:2.5rem; justify-content: center;text-align:center; line-height:2.2;
     b{color:#356CFF;}
-    small{font-size:16px;color:#666;}
+    small{font-size:1.6rem;color:#666;}
     .inp-select{display:inline-block;vertical-align: middle;background:#fff;width:20rem;margin-right:1rem;}
   }
   .text-etc{margin-top:2.4rem;}
+}
+@media all and (max-width:960px){
+  .target-marketing-result{
+    margin-top:3rem;
+    .result-box{ padding:2rem 2rem;font-size:1.7rem;;
+      word-break: keep-all;
+      small{font-size:1.4rem;}
+      .inp-select{width:15rem;}
+    }
+    .text-etc{margin-top:2.4rem;}
+  }
+}
+@media all and (max-width:600px){
+  .target-marketing-result{
+    .result-box{
+      .inp-select{width:100%;}
+    }
+  }
 }
 
 .data-table {border-top:1px solid #333;
@@ -760,7 +785,7 @@
       .btn-popwrap {
         .default {
           min-width: 0;
-          width: 22.4rem;
+          max-width: 22.4rem;
         }
       }
     }
