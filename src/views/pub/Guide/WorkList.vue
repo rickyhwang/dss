@@ -2476,7 +2476,49 @@
 		<section class="ia-section ia-section-ajax" data-file="ajax_ia_5" data-color="01a2de" id="gIA6">
 			<div class="ia-section-header">
 				<h2 class="ia-h2"><a href="#this" class="accordion-toggle">타겟마케팅</a></h2>
-				
+			</div>
+			<div class="ia-section-body" style="height: auto;">
+				<div class="ia-tab-content type-list is-visible">
+					<div class="tbl ia-tbl">					
+						<table>
+						<thead>
+								<tr>
+									<th scope="col" class="col-num">번호</th>
+									<th scope="col" class="col-1depth">1Depth</th>
+									<th scope="col" class="col-2depth">2Depth</th>
+									<th scope="col" class="col-3depth">3Depth</th>
+									<th scope="col" class="col-4depth">4Depth</th>
+									<th scope="col" class="col-5depth">5Depth</th>
+									<th scope="col" class="col-point">구분</th>
+									<th scope="col" class="col-url">URL</th>
+									<th scope="col" class="col-memo">비고</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr v-for="(item, index) in [
+											{title:'마이페이지 타겟마케팅', depth2:'', type:'page', path:'MY_10_01'},
+											{title:'', depth2:'상세', type:'page', path:'MY_10_02'},
+											{title:'타겟마케팅 탐색', depth2:'', type:'page', path:'TGMK_01'},
+											{title:'', depth2:'결과', type:'page', path:'TGMK_01_01'},
+											{title:'타겟마케팅 신청', depth2:'', type:'page', path:'TGMK_02_01_LMS'},
+											{title:'', depth2:'완료', type:'page', path:'TGMK_02_02'},
+											{title:'광고메세지 수정', depth2:'', type:'page', path:'MY_10_02_01_p'},
+											{title:'결과리포트', depth2:'', type:'page', path:'MY_10_02_02_p'},
+										]" :key="index">
+										<td class="col-num"></td>
+										<td class="col-1depth">{{ item.title }}</td>
+										<td class="col-2depth">{{ item.depth2 }}</td>
+										<td class="col-3depth">{{ item.depth3 }}</td>
+										<td class="col-4depth"></td>
+										<td class="col-5depth"></td>
+										<td class="col-point">{{ item.type }}</td>
+										<td class="col-url"><router-link :to="item.path" target="_blank">{{ '/views/pub/TargetMarketing/' + item.path }}</router-link></td>
+										<td class="col-memo"></td>
+								</tr>
+							</tbody>
+					</table>
+					</div>
+				</div>	
 			</div>
 			
 		</section>
