@@ -1361,7 +1361,17 @@ const DefaultRoutes = {
         appearMenu : true,
         requiresAuth: false
       }
-    }
+    },
+
+    //타겟 마케팅
+    { path: '/MY_10_01', component: () => import('@/views/pub/TargetMarketing/MY_10_01.vue') },    
+    { path: '/MY_10_02', component: () => import('@/views/pub/TargetMarketing/MY_10_02.vue') },    
+    { path: '/TGMK_01', component: () => import('@/views/pub/TargetMarketing/TGMK_01.vue') },    
+    { path: '/TGMK_01_01', component: () => import('@/views/pub/TargetMarketing/TGMK_01_01.vue') },    
+    { path: '/TGMK_02_01_LMS', component: () => import('@/views/pub/TargetMarketing/TGMK_02_01_LMS.vue') },    
+    { path: '/TGMK_02_02', component: () => import('@/views/pub/TargetMarketing/TGMK_02_02.vue') },    
+    { path: '/MY_10_02_01_p', component: () => import('@/views/pub/TargetMarketing/MY_10_02_01_p.vue') },    
+    { path: '/MY_10_02_02_p', component: () => import('@/views/pub/TargetMarketing/MY_10_02_02_p.vue') },    
   ]
 };
 
