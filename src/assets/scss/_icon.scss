@@ -15,6 +15,7 @@
     height: 2rem;
     background-image: url('../images/icon/icon_trash.png');
 }
+
 .icon-pencil {
     width: 2rem;
     height: 2rem;
@@ -51,6 +52,12 @@
     background-image: url('../images/icon/icon_lock.png');
 }
 
+.icon-close {
+    width: var(--v-icon-size);
+    height: var(--v-icon-size);
+    background-image: url('../images/icon/icon_banner_close_white.png');
+}
+
 .icon-q {
     width: 2.8rem;
     height: 2.8rem;
@@ -79,9 +86,11 @@
     width: 3.2rem;
     height: 3.2rem;
 }
+
 .icon-pick-on {
     background-image: url('../images/icon/icon-wishlist.png');
 }
+
 .icon-pick-off {
     background-image: url('../images/icon/icon_wishlist_off.png');
 }
@@ -99,7 +108,8 @@
 }
 
 @media only screen and (max-width: 960px) {
-    .icon-q, .icon-a,
+    .icon-q,
+    .icon-a,
     .icon-flow-arrow,
     .icon-prod {
         width: var(--v-icon-size);
@@ -113,7 +123,8 @@
         width: var(--v-icon-size);
         height: var(--v-icon-size);
     }
-    .icon-minus, .icon-plus {
+    .icon-minus,
+    .icon-plus {
         width: 2rem;
         height: 2rem;
     }

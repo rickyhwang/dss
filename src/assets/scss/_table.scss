@@ -19,24 +19,28 @@
     user-select: none;
 }
 
-.v-table > .v-table__wrapper > table > tbody > tr > td,
-.v-table > .v-table__wrapper > table > tbody > tr > th {
+.v-table > .v-table__wrapper > table > tbody > tr > td:not(:last-of-type),
+.v-table > .v-table__wrapper > table > tbody > tr > th,
+.v-table > .v-table__wrapper > table > thead > tr > td,
+.v-table > .v-table__wrapper > table > thead > tr > th:not(:last-of-type),
+.v-table > .v-table__wrapper > table > tfoot > tr > td,
+.v-table > .v-table__wrapper > table > tfoot > tr > th {
+    border-right: 1px solid #ddd;
+}
+
+.v-table > .v-table__wrapper > table > tbody > tr > td {
     color: #333;
 }
 
-.v-table > .v-table__wrapper > table > thead > tr > th {
-    background-color: #F8F8F8;
+.v-table > .v-table__wrapper > table > thead > tr > th,
+.v-table > .v-table__wrapper > table > tbody > tr > th {
+    background-color: #f8f8f8;
 }
 
-.v-table > .v-table__wrapper > table > tbody > tr > td + td,
-.v-table > .v-table__wrapper > table > thead > tr > th + th {
+// table border
+.v-table > .v-table__wrapper > table .border-left {
     border-left: 1px solid #ddd;
 }
-
-
-
-
-
 
 @media only screen and (max-width: 960px) {
     .v-table > .v-table__wrapper > table > tbody > tr > td,
@@ -45,7 +49,7 @@
     .v-table > .v-table__wrapper > table > thead > tr > th,
     .v-table > .v-table__wrapper > table > tfoot > tr > td,
     .v-table > .v-table__wrapper > table > tfoot > tr > th {
-        padding: 1rem .8rem;
+        padding: 1rem 0.8rem;
         font-size: 1.4rem;
     }
 }

@@ -109,8 +109,8 @@
     ]),
   });
 
+  const file = ref('');
   const handleFileChange = (e) => {
-    console.log(e.target.value);
     file.value = e.target.value
   };
 

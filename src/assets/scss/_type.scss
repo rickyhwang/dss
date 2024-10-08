@@ -1,27 +1,19 @@
 // subTitle
 .sub-title {
-    font-family: "OneShinhan";
+    font-family: 'OneShinhan', sans-serif;
     font-size: 4rem;
     font-weight: 700;
     color: #111518;
 }
 
 // heading
-.text-h1 {
-
-}
-.text-h2 {
-    
-}
-.text-h3 {
-
-}
 .text-h4 {
     color: #111518;
     font-size: 3.2rem;
     font-weight: 500;
     line-height: 150%;
 }
+
 .text-h5 {
     color: #111518;
     font-size: 2.4rem;
@@ -36,37 +28,41 @@
     font-weight: 500;
     line-height: 150%;
 }
+
 .subtitle-22 {
     color: #111518;
     font-size: 2.2rem;
     font-weight: 500;
     line-height: 150%;
 }
+
 .subtitle-20 {
     color: #111518;
     font-size: 2rem;
     font-weight: 500;
     line-height: 150%;
 }
+
 .subtitle-18 {
     color: #111518;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 150%;
 }
+
 .subtitle-16 {
     color: #111518;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 150%;
 }
+
 .subtitle-14 {
     color: #111518;
     font-size: 1.4rem;
     font-weight: 500;
-    line-height: 150%; 
+    line-height: 150%;
 }
-
 
 // text - fw400
 .text-24 {
@@ -75,43 +71,48 @@
     font-weight: 400;
     line-height: 150%;
 }
+
 .text-22 {
     color: #111518;
     font-size: 2.2rem;
     font-weight: 400;
     line-height: 150%;
 }
+
 .text-20 {
     color: #111518;
     font-size: 2rem;
     font-weight: 400;
     line-height: 150%;
 }
+
 .text-18 {
     color: #111518;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 150%;
 }
+
 .text-16 {
     color: #111518;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 150%;
 }
+
 .text-14 {
     color: #111518;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 150%;
 }
+
 .text-12 {
     color: #111518;
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 150%;
 }
-
 
 @media only screen and (max-width: 960px) {
     .sub-title {

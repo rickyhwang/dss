@@ -1,136 +1,145 @@
 .v-input--density-default:not(.v-autocomplete--multiple),
 .v-field--variant-solo,
 .v-field--variant-filled {
-  --v-input-control-height: 2.4375rem;
-  --v-input-padding-top: 0.125rem;;
-  input.v-field__input {
-    padding-bottom: 0.125rem;
-  }
-  .v-field__input {
-    padding-bottom: 0.125rem;
-  }
-  textarea {
-    padding-top: 11px;
-  }
+    --v-input-control-height: 2.4375rem;
+    --v-input-padding-top: 0.125rem;
+
+    input.v-field__input {
+        padding-bottom: 0.125rem;
+    }
+
+    .v-field__input {
+        padding-bottom: 0.125rem;
+    }
+
+    textarea {
+        padding-top: 11px;
+    }
 }
 
 .v-input--density-default:not(.v-textarea) {
-  .v-field__input {
-    min-height: 4.8rem;
-  }
+    .v-field__input {
+        min-height: 4.8rem;
+    }
 }
 
 .v-field--variant-outlined {
-  &.v-field--focused {
-    .v-field__outline {
-      --v-field-border-width: 1px;
+    &.v-field--focused {
+        .v-field__outline {
+            --v-field-border-width: 1px;
+        }
     }
-  }
 }
 
 .v-input {
-  .v-input__details {
-    padding-inline: 0;
-  }
+    .v-input__details {
+        padding-inline: 0;
+    }
 }
 
 .v-input--density-comfortable {
-  --v-input-control-height: 3.5rem;
-  --v-input-padding-top: 1.0625rem;
+    --v-input-control-height: 3.5rem;
+    --v-input-padding-top: 1.0625rem;
 }
 
 .v-label {
-  font-size: 1rem;
-  line-height: 150%;
-  font-weight: 500;
-  --v-medium-emphasis-opacity: 1;
-  color: rgb(var(--v-theme-lightText));
+    font-size: 1rem;
+    line-height: 150%;
+    font-weight: 500;
+    --v-medium-emphasis-opacity: 1;
+    color: rgb(var(--v-theme-lightText));
 }
 
 .v-switch .v-label,
 .v-checkbox .v-label {
-  opacity: 1;
+    opacity: 1;
 }
 
 .todo-list {
-  .v-selection-control.v-selection-control--dirty {
-    .v-label {
-      text-decoration: line-through;
+    .v-selection-control.v-selection-control--dirty {
+        .v-label {
+            text-decoration: line-through;
+        }
     }
-  }
 }
 
 textarea.v-field__input {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 .textarea-input {
-  .v-label {
-    top: 0.9375rem;
-    line-height: 150%;
-  }
+    .v-label {
+        top: 0.9375rem;
+        line-height: 150%;
+    }
 }
 
 .hidden-label {
-  position: absolute;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0;
-  padding: 0;
-  height: 1px;
-  width: 1px;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    height: 1px;
+    width: 1px;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
 }
 
 .v-input--density-comfortable {
-  --v-input-control-height: 2.875rem;
-  --v-input-padding-top: 0.75rem;
+    --v-input-control-height: 2.875rem;
+    --v-input-padding-top: 0.75rem;
 }
 
 .v-field__input::placeholder {
-  font-size: 1.6rem;
-  color: #aaa !important;
-  opacity: 1 !important;
+    font-size: 1.6rem;
+    color: #aaa !important;
+    opacity: 1 !important;
 }
 
 .v-field--disabled {
-  opacity: 1 !important;
-  background-color: #f3f3f3;
-  color: #666;
-  pointer-events: none;
-  .v-field__input::placeholder {
-    color: #ccc !important;
-  }
-  .v-field__outline {
-    color: #ddd !important;
-  }
+    opacity: 1 !important;
+    background-color: #f3f3f3;
+    color: #666;
+    pointer-events: none;
+
+    .v-field__input::placeholder {
+        color: #ccc !important;
+    }
+
+    .v-field__outline {
+        color: #ddd !important;
+    }
 }
 
 .v-select .v-field .v-field__input > input::placeholder {
-  color: #888;
-  opacity: 1;
+    color: #888;
+    opacity: 1;
 }
 
 .v-field__clearable {
-  position: absolute;
-  top:0; right:.5rem;
-  height:100%;
-  justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    height: 100%;
+    justify-content: center;
 }
 
 .v-field__prepend-inner > .v-icon,
 .v-field__append-inner > .v-icon,
-.v-field__clearable > .v-icon {opacity: 1 !important;}
-.v-messages{
-  font-size: 0.875rem;
+.v-field__clearable > .v-icon {
+    opacity: 1 !important;
+}
+
+.v-messages {
+    font-size: 0.875rem;
 }
 
 .mdi-close-circle::before {
-  content: "\F0159";
+    content: '\F0159';
 }
 
 .v-autocomplete__selection-text {
-  color:#111518;
-  font-size: 1rem;
+    color: #111518;
+    font-size: 1rem;
 }

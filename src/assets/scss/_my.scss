@@ -15,13 +15,13 @@
                 font-weight: 500;
                 color: #111518;
 
-                >span {
+                > span {
                     color: #356cff;
                 }
             }
 
             .member-text {
-                margin-top: .8rem;
+                margin-top: 0.8rem;
                 font-size: 1.8rem;
                 color: #111518;
             }
@@ -29,11 +29,11 @@
             .member-buisness {
                 display: flex;
                 align-items: center;
-                margin-top: .8rem;
+                margin-top: 0.8rem;
                 font-size: 1.8rem;
                 color: #111518;
 
-                >dd {
+                > dd {
                     position: relative;
                     padding-left: 3.2rem;
                     &.no-bar{
@@ -43,9 +43,9 @@
                     &::after {
                         content: '';
                         position: absolute;
-                        top: .4rem;
+                        top: 0.4rem;
                         left: 1.6rem;
-                        width: .1rem;
+                        width: 0.1rem;
                         height: 2rem;
                         background-color: #ccc;
                     }
@@ -81,7 +81,7 @@
                     background-size: 100%;
                 }
 
-                +.v-btn {
+                + .v-btn {
                     margin-left: 1.6rem;
                 }
             }
@@ -94,9 +94,9 @@
 
         .v-row {
             margin: -1.2rem;
-            > [class*=v-col-]{
+             > [class*=v-col-]{
                 flex:1;
-             }            
+             }
         }
 
         .v-list {
@@ -104,20 +104,20 @@
             height: 6.4rem;
             padding: 0;
             color: #111518;
-            border: .1rem solid #e5e5e5;
+            border: 0.1rem solid #e5e5e5;
             border-radius: 1.6rem;
 
             &.selected {
-                border: .1rem solid #356cff;
-                box-shadow: 0 1.6rem 1.6rem 0 rgba(19, 38, 89, .06);
+                border: 0.1rem solid #356cff;
+                box-shadow: 0 1.6rem 1.6rem 0 rgba(19, 38, 89, 0.06);
             }
 
             .v-list-item {
                 padding: 1.6rem 2.4rem;
                 min-height: 6.4rem;
 
-                &:hover>.v-list-item__overlay,
-                &.v-list-item--active>.v-list-item__overlay {
+                &:hover > .v-list-item__overlay,
+                &.v-list-item--active > .v-list-item__overlay {
                     opacity: 0;
                 }
             }
@@ -127,6 +127,7 @@
             width: 3.2rem;
             height: 3.2rem;
             border-radius: 0;
+            position:relative;top:-1px;
 
             .my-contract {
                 width: 100%;
@@ -141,7 +142,7 @@
                 background-image: url('../images/icon/icon-target.png');
                 background-size: 100%;
             }
-                        
+
             .my-wishlist {
                 width: 100%;
                 height: 100%;
@@ -162,16 +163,18 @@
                 background-image: url('../images/icon/icon_my_alarm.png');
                 background-size: 100%;
 
-                &::after {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    width: .4rem;
-                    height: .4rem;
-                    background-color: #FF405B;
-                    border-radius: 50%;
+                &.on {
+                    &::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 0.4rem;
+                        height: 0.4rem;
+                        background-color: #ff405b;
+                        border-radius: 50%;
+                    }
                 }
             }
         }
@@ -186,13 +189,13 @@
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        margin-bottom: .8rem;
+        margin-bottom: 0.8rem;
 
         .total {
             font-size: 1.6rem;
             color: #333;
 
-            >span {
+            > span {
                 font-weight: 700;
                 color: #111518;
             }
@@ -206,7 +209,7 @@
         }
 
         .inp-checkbox {
-            padding-bottom: .8rem;
+            padding-bottom: 0.8rem;
         }
 
         .select-wrap {
@@ -249,10 +252,10 @@
             .v-list-item {
                 margin-bottom: 4.8rem;
                 padding: 3.2rem;
-                border: .1rem solid #e5e5e5;
+                border: 0.1rem solid #e5e5e5;
                 border-radius: 2.4rem;
 
-                &:hover>.v-list-item__overlay {
+                &:hover > .v-list-item__overlay {
                     opacity: 0;
                 }
 
@@ -267,7 +270,7 @@
 
             .contract-title {
                 overflow: hidden;
-                margin-bottom: .8rem;
+                margin-bottom: 0.8rem;
                 font-size: 2.2rem;
                 font-weight: 500;
                 color: #111518;
@@ -306,9 +309,9 @@
                         &::after {
                             content: '';
                             position: absolute;
-                            top: .4rem;
+                            top: 0.4rem;
                             left: 1.6rem;
-                            width: .1rem;
+                            width: 0.1rem;
                             height: 1.8rem;
                             background-color: #e5e5e5;
                         }
@@ -319,7 +322,7 @@
                     font-size: 1.6rem;
                     color: #666;
 
-                    >span {
+                    > span {
                         font-weight: 500;
                         color: #111518;
                     }
@@ -329,7 +332,7 @@
             .product-list {
                 overflow: hidden;
 
-                >li {
+                > li {
                     position: relative;
                     margin-bottom: 0.8rem;
 
@@ -341,7 +344,7 @@
                 .list-item {
                     display: grid;
                     align-items: center;
-                    grid-template-areas: "prepend content append";
+                    grid-template-areas: 'prepend content append';
                     grid-template-columns: max-content 1fr auto;
                     position: relative;
                     max-width: 100%;
@@ -355,7 +358,7 @@
                         grid-area: content;
                         display: grid;
                         align-items: center;
-                        grid-template-areas: "prepend content append";
+                        grid-template-areas: 'prepend content append';
                         grid-template-columns: max-content 1fr auto;
                         position: relative;
 
@@ -365,7 +368,7 @@
                             grid-area: content;
 
                             .category {
-                                margin-bottom: .8rem;
+                                margin-bottom: 0.8rem;
                                 font-size: 1.4rem;
                                 color: #666;
                             }
@@ -458,8 +461,7 @@
 
             .v-btn {
                 width: 13rem;
-                min-width: 13rem;
-                margin: 0 .4rem;
+                margin: 0 0.4rem;
             }
 
             .text {
@@ -485,11 +487,11 @@
 
             .v-list-item {
                 margin-bottom: 1.6rem;
-                padding: 2.2rem 3.2rem;
-                border: .1rem solid #e5e5e5;
+                padding: 0;
+                border: 0.1rem solid #e5e5e5;
                 border-radius: 1.6rem;
 
-                &:hover>.v-list-item__overlay {
+                &:hover > .v-list-item__overlay {
                     opacity: 0;
                 }
 
@@ -497,8 +499,34 @@
                     margin-bottom: 0;
                 }
 
+                .list-row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 2.2rem 3.2rem;
+
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        overflow: hidden;
+                    }
+
+                    .v-icon {
+                        flex-shrink: 0;
+                        margin-left: 2.4rem;
+                    }
+
+                    .btn-arrow {
+                        width: 2.4rem;
+                        height: 2.4rem;
+                        background-image: url('../images/btn/btn_accordion_arrow.png');
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                    }
+                }
+
                 .date {
-                    margin-bottom: .8rem;
+                    margin-bottom: 0.8rem;
                     color: #666;
 
                     .alarm {
@@ -510,8 +538,8 @@
                             position: absolute;
                             top: 0;
                             right: -1.4rem;
-                            width: .6rem;
-                            height: .6rem;
+                            width: 0.6rem;
+                            height: 0.6rem;
                             background-color: #ff405b;
                             border-radius: 50%;
                         }
@@ -519,38 +547,22 @@
                 }
 
                 .register {
-                    margin-top: .8rem;
+                    margin-top: 0.8rem;
                     color: #7f87a4;
-                }
-
-                .v-btn {
-                    height: 2.4rem;
-                    min-width: 2.4rem;
-                    margin-left: 2.4rem;
-                    padding: 0;
-                    border-radius: 0;
-
-                    .btn-arrow {
-                        width: 2.4rem;
-                        height: 2.4rem;
-                        background-image: url('../images/btn/btn_accordion_arrow.png');
-                        background-repeat: no-repeat;
-                        background-size: 100%;
-                    }
                 }
             }
         }
     }
 
     .my-info {
-        border-bottom: .1rem solid #e5e5e5;
+        border-bottom: 0.1rem solid #e5e5e5;
 
         &.first {
             margin-bottom: 5.6rem;
             border: none;
         }
 
-        >.title {
+        > .title {
             display: flex;
             align-items: center;
             padding: 2.4rem 0;
@@ -558,7 +570,7 @@
             font-size: 2.4rem;
             font-weight: 500;
             line-height: 150%;
-            border-bottom: .1rem solid #e5e5e5;
+            border-bottom: 0.1rem solid #e5e5e5;
 
             .v-icon {
                 width: 3.2rem;
@@ -590,7 +602,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    padding: .8rem 0;
+                    padding: 0.8rem 0;
 
                     .form-checkbox {
                         display: flex;
@@ -615,13 +627,13 @@
                                 left: 0;
                                 width: 3.2rem;
                                 height: 3.2rem;
-                                padding: .4rem;
+                                padding: 0.4rem;
 
                                 &::before {
                                     background-color: transparent;
                                 }
 
-                                >.v-icon {
+                                > .v-icon {
                                     width: 100%;
                                     height: 100%;
                                     opacity: 1;
@@ -634,7 +646,7 @@
                                 left: 0;
                                 width: 3.2rem;
                                 height: 3.2rem;
-                                padding: .4rem;
+                                padding: 0.4rem;
                             }
 
                             .mdi-checkbox-blank-outline::before {
@@ -685,7 +697,7 @@
                                     background-color: transparent;
                                 }
 
-                                >.v-icon {
+                                > .v-icon {
                                     width: 100%;
                                     height: 100%;
                                     opacity: 1;
@@ -719,18 +731,18 @@
                             .v-label {
                                 position: relative;
                                 padding-left: 3.2rem;
-                                font-size: 1.6rem;
+                                font-size: 1.4rem;
                                 font-weight: 400;
                                 color: #333;
                             }
 
-                            +.check-media {
+                            + .check-media {
                                 margin-left: 2.4rem;
                             }
                         }
 
                         .v-divider--vertical {
-                            margin: .6rem 3rem;
+                            margin: 0.6rem 3rem;
                             color: #e5e5e5;
                             opacity: 1;
                         }
@@ -760,9 +772,9 @@
         .quit-guide {
             padding: 4rem 0;
 
-            >li {
+            > li {
                 position: relative;
-                margin-bottom: .8rem;
+                margin-bottom: 0.8rem;
                 padding-left: 2rem;
                 font-size: 1.6rem;
                 color: #111518;
@@ -772,15 +784,14 @@
                     display: block;
                     position: absolute;
                     top: 1.1rem;
-                    left: .7rem;
-                    width: .3rem;
-                    height: .3rem;
+                    left: 0.7rem;
+                    width: 0.3rem;
+                    height: 0.3rem;
                     background-color: #666;
                     border-radius: 50%;
                 }
             }
         }
-
     }
 
     .my-quit {
@@ -810,13 +821,13 @@
                 left: 0;
                 width: 3.2rem;
                 height: 3.2rem;
-                padding: .4rem;
+                padding: 0.4rem;
 
                 &::before {
                     background-color: transparent;
                 }
 
-                >.v-icon {
+                > .v-icon {
                     width: 100%;
                     height: 100%;
                     opacity: 1;
@@ -829,7 +840,7 @@
                 left: 0;
                 width: 3.2rem;
                 height: 3.2rem;
-                padding: .4rem;
+                padding: 0.4rem;
             }
 
             .mdi-checkbox-blank-outline::before {
@@ -905,12 +916,11 @@
                 .member-buisness {
                     font-size: 1.6rem;
 
-                    >dd {
+                    > dd {
                         padding-left: 1.6rem;
-
                         &::after {
-                            top: .3rem;
-                            left: .8rem;
+                            top: 0.3rem;
+                            left: 0.8rem;
                             height: 1.8rem;
                         }
                     }
@@ -938,26 +948,26 @@
             padding: 1.6rem 0 3.2rem;
 
             .v-row {
-                margin: -.4rem;
+                margin: -0.4rem;
             }
 
             .v-col-12 {
                 flex: 0 0 25%;
                 max-width: 25%;
-                padding: .4rem;
+                padding: 0.4rem;
             }
 
             .v-list {
                 height: 7.2rem;
-                border-radius: .8rem;
+                border-radius: 0.8rem;
 
                 &.selected {
-                    box-shadow: 0 .8rem .8rem 0 rgba(19, 38, 89, .06);
+                    box-shadow: 0 0.8rem 0.8rem 0 rgba(19, 38, 89, 0.06);
                 }
 
                 .v-list-item {
                     display: block;
-                    padding: 1.2rem .8rem;
+                    padding: 1.2rem 0.8rem;
                     min-height: 7.2rem;
 
                     .v-list-item__content {
@@ -970,7 +980,7 @@
                     .v-list-item__append {
                         justify-content: center;
 
-                        >.v-avatar~.v-list-item__spacer {
+                        > .v-avatar ~ .v-list-item__spacer {
                             width: 0;
                         }
                     }
@@ -1009,7 +1019,7 @@
                 width: 18rem;
 
                 .v-field--center-affix .v-field__append-inner {
-                    margin: .9rem 1.6rem .9rem 0;
+                    margin: 0.9rem 1.6rem 0.9rem 0;
                 }
 
                 .v-select .v-field {
@@ -1039,7 +1049,7 @@
                     .number {
                         display: block;
                         margin-right: 0;
-                        margin-bottom: .4rem;
+                        margin-bottom: 0.4rem;
                     }
                 }
 
@@ -1048,7 +1058,7 @@
                     margin-bottom: 2.4rem;
 
                     .period-area {
-                        margin-bottom: .8rem;
+                        margin-bottom: 0.8rem;
 
                         .title {
                             font-size: 1.4rem;
@@ -1059,8 +1069,8 @@
                             font-size: 1.4rem;
 
                             &::after {
-                                top: .3rem;
-                                left: .8rem;
+                                top: 0.3rem;
+                                left: 0.8rem;
                                 height: 1.6rem;
                             }
                         }
@@ -1075,7 +1085,7 @@
                 .product-list {
                     .list-item {
                         padding: 1.6rem;
-                        border-radius: .8rem;
+                        border-radius: 0.8rem;
 
                         .list-item-content {
                             display: block;
@@ -1115,19 +1125,15 @@
             .contract-btn-area {
                 margin-top: 2.4rem;
 
-                &.download {
-                    display: none;
-                }
-
-                .btn-download {
-                    display: none;
-                }
-
                 .v-btn {
+                    flex: 1;
                     width: 100%;
-                    min-width: 100%;
                     height: 4.2rem;
                     margin: 0;
+
+                    + .v-btn {
+                        margin-left: 0.8rem;
+                    }
                 }
 
                 .text {
@@ -1141,17 +1147,19 @@
 
             .v-list {
                 .v-list-item {
-                    padding: 1.6rem 2.4rem;
+                    .list-row {
+                        padding: 1.6rem 2.4rem;
+
+                        .v-icon {
+                            margin-left: 1.6rem;
+                        }
+                    }
 
                     .text-truncate {
                         overflow: visible !important;
                         white-space: normal !important;
                         text-overflow: inherit !important;
                         word-break: break-all;
-                    }
-
-                    .v-btn {
-                        margin-left: 1.6rem;
                     }
                 }
             }
@@ -1162,14 +1170,14 @@
                 margin-bottom: 3.2rem;
             }
 
-            >.title {
+            > .title {
                 padding: 1.6rem 0;
                 font-size: 1.8rem;
 
                 .v-icon {
                     width: 2.4rem;
                     height: 2.4rem;
-                    margin-right: .8rem;
+                    margin-right: 0.8rem;
                 }
             }
 
@@ -1192,19 +1200,19 @@
 
                             .check-media {
                                 .v-label {
-                                    font-size: 1.4rem;
+                                    font-size: 1.2rem;
                                 }
                             }
 
                             .v-divider--vertical {
-                                margin: .6rem 1.4rem;
+                                margin: 0.6rem 1.4rem;
                             }
                         }
 
                         .agree-btn {
                             display: flex;
                             justify-content: flex-end;
-                            margin-top: .8rem;
+                            margin-top: 0.8rem;
 
                             .v-btn {
                                 height: 2.4rem;
@@ -1223,13 +1231,13 @@
             .quit-guide {
                 padding: 3.2rem 0;
 
-                >li {
+                > li {
                     padding-left: 1.8rem;
                     font-size: 1.4rem;
 
                     &::after {
                         top: 1rem;
-                        left: .6rem;
+                        left: 0.6rem;
                     }
                 }
             }
@@ -1264,11 +1272,11 @@
         .btn-wrap {
             .default {
                 &.prev {
-                    width: calc(35% - .4rem);
+                    width: calc(35% - 0.4rem);
                 }
 
                 &.next {
-                    width: calc(65% - .4rem);
+                    width: calc(65% - 0.4rem);
                 }
             }
         }
