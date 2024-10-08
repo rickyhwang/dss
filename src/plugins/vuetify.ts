@@ -3,15 +3,7 @@ import '@mdi/font/css/materialdesignicons.css';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
 import {
-  DefaultTheme,
-  LightTheme1,
-  LightTheme2,
-  LightTheme3,
-  LightTheme4,
-  LightTheme5,
-  LightTheme6,
-  LightTheme7,
-  LightTheme8
+  DefaultTheme
 } from '@/theme/LightTheme';
 import {
   DarkDefaultTheme,
@@ -33,14 +25,6 @@ export default createVuetify({
     defaultTheme: 'DefaultTheme',
     themes: {
       DefaultTheme,
-      LightTheme1,
-      LightTheme2,
-      LightTheme3,
-      LightTheme4,
-      LightTheme5,
-      LightTheme6,
-      LightTheme7,
-      LightTheme8,
       DarkDefaultTheme,
       DarkTheme1,
       DarkTheme8,
